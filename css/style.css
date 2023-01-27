@@ -7,13 +7,13 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #552075;
-  box-shadow: inset 0 0 5px #552075; 
+  /* box-shadow: inset 0 0 5px #552075;  */
   /* border-radius: 10px; */
 }
  
@@ -30,12 +30,12 @@ body{
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
   background-color: rgba(85,32,117, 0.5);
-  padding: 15px;
+  padding: 20px;
 }
+
 
 .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
   background-color: rgba(85,32,117, 0.9);
-  padding: 15px;
 }
 .carousel-control-prev{
   justify-content: start;
@@ -45,7 +45,71 @@ body{
   justify-content: end;
 }
 
+/* Button */
 
+.btn-article{
+  background-color: #552075;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border: 1px solid #552075;
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+
+.btn-article:hover{
+  background-color: #38005a;
+  color: #e8e577;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border: 1px solid #38005a;
+}
+
+/* #church{
+  background-image: url("../../../images/church.jpg");
+  opacity: .9;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px 0;
+  border-radius: 20px 0 0 20px;
+
+} */
+
+#church{
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax{
+  background-image: url("../images/prayer.webp");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-submit{
+  padding: 10px 50px;
+  background-color: #38005a;
+  opacity: 1;
+  color: white;
+  border: white solid 1px;
+}
+
+.btn-submit:hover{
+  background-color: #180027;
+  color: white;
+  border: white solid 1px;
+}
 
 @media only screen and (min-width: 992px){
   .carousel-item img {
